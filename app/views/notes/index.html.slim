@@ -1,0 +1,15 @@
+h1 Note
+.grid
+  .left.container
+    = link_to "新規note", new_note_path, remote: true
+    table.table.table-hover
+      thead
+        tr 
+          th ID
+          th Title
+          th Author
+          th Created At
+      tbody
+        - @notes.each do |note|
+          = render 'item', note: note
+  .right.container

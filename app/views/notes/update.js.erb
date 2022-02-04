@@ -1,0 +1,3 @@
+tr = document.querySelector("#note_<%= @note.id %>")
+tr.innerHTML = "<%= j(render 'item', note: @note)  %>"
+document.querySelector(".right").innerHTML = "<%= j(render 'show')  %>"

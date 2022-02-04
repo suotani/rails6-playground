@@ -1,0 +1,4 @@
+var tr = document.createElement("tr")
+tr.setAttribute("id", "note_<%= @note.id %>");
+tr.innerHTML = "<%= j(render 'item', note: @note)  %>"
+document.querySelector("tbody").appendChild(tr)

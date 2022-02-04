@@ -1,0 +1,15 @@
+- if @note.errors.present?
+  - @note.errors.full_messages.each do |e|
+    p = e
+= form_with model: @note do |f|
+  .form-group
+    = f.label :title
+    = f.text_field :title, class: "form-control"
+  .form-group
+    = f.label :author
+    = f.text_field :author, class: "form-control"
+  .form-group
+    = f.label :body
+    = f.text_area :body, class: "form-control"
+  .form-group
+    = f.submit 'Save', class: "btn btn-primary"
