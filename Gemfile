@@ -2,7 +2,7 @@ ruby '3.0.2'
 source 'https://rubygems.org' do
   gem 'rails',  '6.0.4.1'
   gem 'sqlite3'
-  gem 'puma',   '5.5.2'
+  gem 'puma',   '5.6.4'
   gem 'bcrypt', '3.1.16'
   gem 'webpacker', '~> 4.0'
 
